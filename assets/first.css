@@ -265,12 +265,10 @@ svg:not([fill]) {
 .Parallax_parallax__eGxk4 {
 	height: 100%;
 	left: 0;
-	opacity: .7;
+	opacity: .4;
 	position: fixed;
 	top: 0;
-	transition: -webkit-transform 2s ease-in-out;
-	transition: transform 2s ease-in-out;
-	transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
+	transition: opacity 1.4s;
 	width: 100%;
 	z-index: 1
 }
@@ -278,9 +276,9 @@ svg:not([fill]) {
 .Parallax_imagePosition__PpW5a,
 .Parallax_image__KefxP,
 .Parallax_overlay__IOBLk {
-	left: 30%;
+	left: 40%;
 	position: absolute;
-	top: 20%
+	top: 30%
 }
 
 .Parallax_image__KefxP {

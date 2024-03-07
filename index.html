@@ -14,6 +14,26 @@
          function openRick() {
             document.location.href = "/rick"
          }
+
+         var parallax
+         onload = function() {
+            parallax = document.getElementsByClassName("Parallax_parallax__eGxk4")[0]
+            parallax.style.opacity = 0.7
+         }
+         window.onmousemove = function(e) {
+            const sens = 1.4
+            
+            // Get the mouse coordinates
+            var mouseX = e.pageX;
+            var mouseY = e.pageY;
+
+            // Calculate the new position for the parallax element
+            var newX = mouseX / window.innerWidth * sens; // Adjust based on your needs
+            var newY = mouseY / window.innerHeight * sens; // Adjust based on your needs
+
+            // Apply the new position
+            parallax.style.transform = "translate(" + newX + "%, " + newY + "%)";
+}
       </script>
    </head>
    <body">
